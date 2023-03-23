@@ -2,11 +2,15 @@ import React, { useState, useEffect } from 'react';
 import './style.css';
 import Bpp from './Bpp';
 export default function App() {
+  const [chkone, setCheckone] = useState('');
+  const [chktwo, setChecktwo] = useState('');
   return (
     <>
       <div>
+        <p> value of first is {chkone}</p>
+        <p> value of first is {chktwo}</p>
         <h1>I am parent component</h1>
-        <Bpp />
+        <Bpp name1={setCheckone} name2={setChecktwo} />
       </div>
     </>
   );
