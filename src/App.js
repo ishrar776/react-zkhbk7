@@ -43,7 +43,7 @@ export default function App() {
       <p>
         <input
           type="checkbox"
-          onChange={handleChange}
+          onClick={handleChange}
           value={values.firstchk}
           name="firstChk"
         ></input>
