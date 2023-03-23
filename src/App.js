@@ -11,6 +11,7 @@ export default function App() {
     const name = e.target.name;
     const value = e.target.checked;
     setValues({ ...values, [name]: value });
+    console.log('values of check click' + chekvalue);
   };
   const submitdata = (e) => {
     e.preventDefault();
@@ -18,7 +19,7 @@ export default function App() {
     if (!isSubmit) {
       console.log('israr hey');
       console.log('values of check click' + chekvalue);
-      console.log('values of check click innner' + values.firstchk);
+      //console.log('values of check click innner' + values.firstchk);
       const allData = { ...values };
       const requestOptions = {
         method: 'POST',
@@ -53,3 +54,6 @@ export default function App() {
     </form>
   );
 }
+//There should be a parent component and a child component
+//Child component should render 2 checkboxes
+//When we select any checkbox from child component, parent component should //display //the value of the checkbox
