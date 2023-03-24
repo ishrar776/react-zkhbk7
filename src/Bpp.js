@@ -9,6 +9,7 @@ export default function Bpp(pros) {
   };
   const handleChange1 = (e) => {
     const chkvalue = e.target.checked ? 'citymontesery2' : 'kuchnhi2';
+    pros.name2(chkvalue);
     console.log(e.target.checked);
     console.log('values of second checkbox' + chkvalue);
   };
