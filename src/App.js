@@ -4,13 +4,15 @@ import Bpp from './Bpp';
 export default function App() {
   const [chkone, setCheckone] = useState('');
   const [chktwo, setChecktwo] = useState('');
+  const [dropdown, drpValue] = useState('');
   return (
     <>
       <div>
         <p> value of first is {chkone}</p>
         <p> value of first is {chktwo}</p>
+        <p> value of selectDropdown is {dropdown}</p>
         <h1>I am parent component</h1>
-        <Bpp name1={setCheckone} name2={setChecktwo} />
+        <Bpp name1={setCheckone} name2={setChecktwo} name3={drpValue} />
       </div>
     </>
   );
